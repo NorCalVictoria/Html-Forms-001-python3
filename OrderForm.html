@@ -1,0 +1,79 @@
+<!doctype html> 
+<html>
+    <head>
+        <title>Ubermelon Order Form</title>
+    </head>
+    <body>
+        <h1><b>Order!</b></h1>
+        <h3><b>Prices</b></h3>
+        <table>
+        <tr>
+            <td><b>Melon Name</b></td> 
+            <td><b>Price per lb</b></td>
+        </tr> 
+        <tr> 
+            <td>Watermelon</td>
+            <td>$1.59</td>
+        </tr>
+        <tr> 
+            <td>Honedew</td>
+            <td>$0.99</td>
+        </tr>
+        <tr>
+            <td>Canteloupe</td>
+            <td>$1.29</td>
+        </tr>
+        <tr>
+            <td>Crenshaw</td>
+            <td>$2.19</td>
+        </tr>
+        <tr>
+            <td>Canary</td>
+            <td>$11.99</td>
+        </tr>
+        </table>
+        <div>
+            Place your orders! You know you want to.
+        </div>
+
+        <div>
+            <form>
+                First Name<input type ="firstname"><br>
+                Last Name<input type ="lastname"><br>
+            
+            Melon Type
+                <select name ="melontype"><br>
+                    <option value= "watermelon">Watermelon</option>
+                    <option value= "honeydew">Honedew</option>
+                    <option value= "canteloupe">Canteloupe</option>
+                    <option value= "crenshaw">Crenshaw</option>
+                    <option value= "canary">Canary</option>
+                </select>
+
+                <input type ="quantity">
+                <input type ="radio" name="ampm" value="time">AM
+                <input type ="radio" name="ampm" value="time">PM
+                <input type ="radio" name="ampm" value="time">WAT
+                <input type ="radio" name="returning" value="yes">YES
+                <input type ="radio" name="returning" value="no">NO
+                <input type ="checkbox" name="stats" value="dog">dog
+                <input type ="checkbox" name="stats" value="cat">cat
+                <input type ="checkbox" name="stats" value="hedgehog">hedgehog
+                <input type ="checkbox" name="stats" value="balloonicorn">balloonicorn
+                <input type ="checkbox" name="stats" value="dog">dog
+                <input type ="checkbox" name="stats" value="yak">yak
+
+                <form action = "https://ubermelon-order-form.herokuapp.com/process>" method = "GET" >
+                    <input type = "submit"> 
+            </form>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
